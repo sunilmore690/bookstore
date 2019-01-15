@@ -8,6 +8,7 @@ services:
       - "3000:3000"
     environment:
       - MONGODB_URI=mongodb://mongodb/restex_demo
+    entrypoint : npm test
     links:
       - mongo
   mongo:
